@@ -13,7 +13,8 @@ Now including:
 * No node_modules or package.json necessary.
 * Using Chrome as your only IDE.
 * No bundling, compiling, or transpiling needed.
-* Works in all modern browsers (IE11 support [in progress](https://github.com/antiPhaseDomain/silence/issues/1)). 
+* Works in all modern browsers (IE11 support [in progress](https://github.com/antiPhaseDomain/silence/issues/1)).
+
 
 
 ## Quick Start
