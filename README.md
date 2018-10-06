@@ -8,6 +8,13 @@ Let's take a step back and go through the basics again.
 
 Silence is less of a framework and more of a collection of tools, ideas, and methedologies to get up and running with a web app as quickly and painlessly as possible.
 
+Now including:
+
+* No node_modules or package.json necessary.
+* Using Chrome as your only IDE.
+* No bundling, compiling, or transpiling needed.
+* Works in all modern browsers (IE11 support [in progress](https://github.com/antiPhaseDomain/silence/issues/1)). 
+
 
 ## Quick Start
 
