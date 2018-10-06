@@ -77,18 +77,33 @@
     s.src = 'https://cdn.polyfill.io/v2/polyfill.min.js?features='+features.join(',')+'&flags=gated,always&ua=chrome/50&callback=main';
     s.async = true;
     document.head.appendChild(s);
+
   } else {
 
       // If no polyfills are required, invoke the app
       // without delay
+      console.log('this is chrome')
+
       main();
   }
 
   function main() {
       console.log('Now to do the cool stuff...');
+      console.log('Getting ISS Location...');
       fetch('http://api.open-notify.org/iss-now.json').then(function(res) { return res.json()}).then(function(res) { console.log(Object.keys(res)) })
   }
 
   </script>
+
+  <div id="output"></div>
+<!-- Load Babel -->
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<!-- Your custom script here -->
+<script type="text/babel">
+const getMessage = () => "Hello World";
+document.getElementById('output').innerHTML = getMessage();
+</script>
+
+
   </body>
 </html>
