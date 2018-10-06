@@ -1,109 +1,14 @@
-
-<!-- HTML for static distribution bundle build -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Swagger UI</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3.19.2/swagger-ui.css" >
-    <style>
-      html
-      {
-        box-sizing: border-box;
-        overflow: -moz-scrollbars-vertical;
-        overflow-y: scroll;
-      }
+    <title>Silence</title>
+    <script src="test.js"></script>
 
-      *,
-      *:before,
-      *:after
-      {
-        box-sizing: inherit;
-      }
-
-      body
-      {
-        margin:0;
-        background: #fafafa;
-      }
-    </style>
   </head>
 
   <body>
-    <div id="swagger-ui"></div>
-
-    <script src="https://unpkg.com/swagger-ui-dist@3.19.2/swagger-ui-bundle.js"> </script>
-    <script src="https://unpkg.com/swagger-ui-dist@3.19.2/swagger-ui-standalone-preset.js"> </script>
-    <script>
-    window.onload = function() {
-
-      // Build a system
-      const ui = SwaggerUIBundle({
-        url: "https://petstore.swagger.io/v2/swagger.json",
-        dom_id: '#swagger-ui',
-        deepLinking: true,
-        presets: [
-          SwaggerUIBundle.presets.apis,
-          SwaggerUIStandalonePreset
-        ],
-        plugins: [
-          SwaggerUIBundle.plugins.DownloadUrl
-        ],
-        layout: "StandaloneLayout"
-      })
-
-      window.ui = ui
-      console.log("working")
-    }
-  </script>
-
-  <script>
-  // Beware of overly simplistic detects!
-  var features = [];
-  ('Promise' in window) || features.push('Promise');
-  ('fetch' in window) || features.push('fetch');
-  ('IntersectionObserver' in window) || features.push('IntersectionObserver');
-  ('after' in Element.prototype) || features.push('Element.prototype.after');
-
-  // If any features need to be polyfilled, construct
-  // a script tag to load the polyfills and append it
-  // to the document
-  if (features.length) {
-    var s = document.createElement('script');
-
-    // Include a `ua` argument set to a supported browser to skip UA identification
-    // (improves response time) and avoid being treated as unknown UA (which would
-    // otherwise result in no polyfills, even with `always`, if UA is unknown)
-    s.src = 'https://cdn.polyfill.io/v2/polyfill.min.js?features='+features.join(',')+'&flags=gated,always&ua=chrome/50&callback=main';
-    s.async = true;
-    document.head.appendChild(s);
-
-  } else {
-
-      // If no polyfills are required, invoke the app
-      // without delay
-      console.log('this is chrome')
-
-      main();
-  }
-
-  function main() {
-      console.log('Now to do the cool stuff...');
-      console.log('Getting ISS Location...');
-      fetch('http://api.open-notify.org/iss-now.json').then(function(res) { return res.json()}).then(function(res) { console.log(Object.keys(res)) })
-  }
-
-  </script>
-
-  <div id="output"></div>
-<!-- Load Babel -->
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-<!-- Your custom script here -->
-<script type="text/babel">
-const getMessage = () => "Hello World";
-document.getElementById('output').innerHTML = getMessage();
-</script>
-
+    <p>Putting this here</p>
 
   </body>
 </html>
