@@ -12,6 +12,7 @@ Silence is less of a framework and more of a collection of tools, ideas, and met
 ## Quick Start
 
 This video goes over how to get a Swagger UI development environment up and running in less than 5 minutes.
+
 [![Silent Quickstart](https://img.youtube.com/vi/eUQvQdqJEzA/0.jpg)](https://www.youtube.com/watch?v=eUQvQdqJEzA)
 
 There is also a wordy, [in-depth walkthrough available](https://github.com/antiPhaseDomain/silence/wiki/In-Depth-Walkthrough). (It's a work in progress.)
