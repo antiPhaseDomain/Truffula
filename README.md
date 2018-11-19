@@ -3,7 +3,6 @@
 _Now the template for [Panopticon](https://github.com/antiPhaseDomain/Panopticon)!_
 
 * Includes Silence.
-* 
 
 ## Silence Quickstart
 
