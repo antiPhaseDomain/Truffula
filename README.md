@@ -1,6 +1,6 @@
 # Truffula
 
-_Now the template for [Panopticon](https://github.com/antiPhaseDomain/Panopticon)!_t
+_Now the template for [Panopticon](https://github.com/antiPhaseDomain/Panopticon)!_
 
 * Includes Silence.
 * 
